@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/style/normalize.css" />
+        <link rel="stylesheet" href="assets/style/localize.css" />
+        <title>Localize</title>
+	</head>
+    <style>
+        .body {
+              width: 1440px;
+              padding: 0;
+              margin: 0;
+            }
+
+        .sky {
+              background-image: url('assets/images/sky.svg');
+              width: 1440px;
+              height: 372px;
+            }
+        .title {
+            padding-top: 120px;
+            padding-left: 145px;
+            margin-bottom: 27px;
+            font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 54px;
+			line-height: 63px;
+			color: #003395;
+			animation: fade 1s ease infinite;
+        }
+        .subtitle {
+            padding-left: 145px;
+            font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 100%;
+			color: #000000;
+			animation: fade 1s ease infinite;
+        }
+        .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0%;
+            margin: 0%;
+            height: 75px;
+            background: #003395;
+			list-style-type: none;
+        }
+        .allmenu {
+            padding-right: 62px;
+            font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 207.9%;
+			letter-spacing: 2px;
+			color: #ffffff;
+			text-decoration: none;
+        }
+        .allmenu:hover {
+            transform: translate(3%);
+            color: #000000;
+        }
+        #home {
+            padding-left: 149px;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+        .one {
+            display: flex;
+            flex-direction: column;
+            margin-left: 148px;
+        }
+        .two {
+            display: flex;
+            flex-direction: column;
+        }
+        .first {
+            width: 754px;
+            border-top: 2px solid #003395;
+            padding-top: 13px;
+            border-bottom: 2px solid #003395;
+            padding-bottom: 15px;
+            margin-top: 57px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 32px;
+            color: #003395;
+        }
+        
+        .second{
+            width: 754px;
+            border-top: 2px solid #003395;
+            padding-top: 13px;
+            border-bottom: 2px solid #003395;
+            padding-bottom: 15px;
+            margin-top: 34px;
+            margin-bottom: 16px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 32px;
+            color: #003395;
+        }
+        .third {
+            width: 754px;
+            border-top: 2px solid #003395;
+            padding-top: 13px;
+            border-bottom: 2px solid #003395;
+            padding-bottom: 15px;
+            margin-top: 34px;
+            margin-bottom: 16px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 32px;
+            color: #003395;
+        }
+        .texst {
+            width: 754px;
+            padding-top: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 28px;
+			color: #30233D;
+        }
+        .news {
+            margin-top: 56px;
+            margin-left: 30px;
+            width: 362px;
+            height: 244px;
+            border-top: 2px solid #33008D;
+            padding-top: 13px;
+            border-bottom: 2px solid #33008D;
+            border-left: 2px solid #33008D;
+            border-right: 2px solid #33008D;
+            padding-bottom: 15px;
+        }
+        .links {
+            margin-top: 55px;
+            margin-left: 30px;
+            width: 362px;
+            height: 352.6px;
+            border-top: 2px solid #33008D;
+            padding-top: 13px;
+            border-bottom: 2px solid #33008D;
+            border-left: 2px solid #33008D;
+            border-right: 2px solid #33008D;
+            padding-bottom: 15px;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            margin-top: 19px;
+            margin-left: 17px;
+            margin-right: 17px;
+            margin-bottom: 0%;
+            padding-left: 17px;
+            padding-top: 0%;
+            background-color: #24B0FF;
+            width: 314px;
+            height: 60px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+        .newstexst {
+            padding-left: 19px;
+            padding-right: 19px;
+            padding-top: 19px;
+            margin-top: 0%;
+        }
+        .a {
+            margin-top: 0%;
+            padding-top: 22px;
+            padding-left: 19px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16.2px;
+            line-height: 163.35%;
+            text-decoration-line: underline;
+            list-style-type: none;
+            color: #30233D;
+        }
+        .footer {
+            padding: 0%;
+            margin-top: 62px;
+            margin-left: 0%;
+            height: 148px;
+            background: linear-gradient(180deg, #003395 0%, #00205F 100%);
+        }
+        .textfooter {
+            padding-left: 1095px;
+            padding-top: 45px;
+            font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 11.7px;
+            line-height: 163.35%;
+            color: #FCFCFC;
+        }
+        @keyframes fade {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+        }
+    </style>
+    <body class="body">
+        <header>
+            <div class="sky">
+                <h1 class="title">Localize</h1>
+                <h2 class="subtitle">Insert some random text here</h2>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="allmenu" id="home">Home</li>
+                    <li class="allmenu" id="services">Services</li>
+                    <li class="allmenu" id="work">Work</li>
+                    <li class="allmenu" id="about">About</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+           <div class="one">
+                <h2 class="first">Welcome to Localize</h2>
+                <p class="texst">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают <a href="url">латынь</a>.</p>
+                <h2 class="second">Welcome to Localize</h2>
+                <p class="texst">Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
+                <h2 class="third">More filler text</h2>
+                <p class="texst">Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+            </div>
+            <aside class="two">
+                <div class="news">
+                    <h2 class="box">News</h2>
+                    <p class="newstexst">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э.</p>
+                </div>
+                <div class="links">
+                    <h2 class="box">Some links</h2>
+                    <ul class="a">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer">
+            <h3 class="textfooter">© 2020 Myfreedom. All right reserved.</h3>
+        </footer>
+    </body>
+</html>
+
