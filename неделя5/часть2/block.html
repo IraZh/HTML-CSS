@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/style/normalize.css" />
+        <title>Localize</title>
+	</head>
+    <style>
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding-top: 0%;
+            background-color: #E0E0E0;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            height: 70%;
+        }
+        .one {
+            width: 70%;
+            margin: 0%;
+            background-color: #FFF8E3;
+        }
+        .two {
+            width: 40%;
+            background-color:  #DDECCB;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+        .else {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+        }
+        .beg {
+            background-color: #FEEAB9;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #line{
+            display: flex;
+            align-self: stretch;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-left: 85px;
+            margin-right: 85px;
+            margin-bottom: 50px;
+            background-color: #FEEAB9;
+        }
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-around;
+            background-color: #E0E0E0;
+        }
+        .grey {
+            background-color: #FAFAFA;
+            padding: 25px;
+        }
+    </style>
+    <body>
+        <header class="header">
+            <h1>[Шапка страницы]</h1>
+        </header>
+        <main class="main">
+            <div class="one">
+                <h2 class="title">[Основная часть]</h2>
+                   <div class="else">
+                      <p class="beg">[Ещё 1]</p>
+                      <p class="beg">[Ещё 2]</p>
+                </div>
+                   <div id="line">[Ещё 3]</div>
+            </div>
+            <div class="two">
+                <h2 class="title">[Боковая часть]</h2>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="grey">[Секция футера 1]</p>
+            <p class="grey">[Секция футера 2]</p>
+            <p class="grey">[Секция футера 3]</p>
+            <p class="grey">[Секция футера 4]</p>
+        </footer>
+    </body>
+</html>
