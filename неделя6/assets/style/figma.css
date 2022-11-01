@@ -1,0 +1,89 @@
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: #F4F2DD;
+}
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr;
+}
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+    "main-1 main-2";
+    grid-template-columns: 1fr 1fr;
+}
+.footer {
+    display: grid;
+    grid-area: footer;
+    justify-content: end;
+    padding-right: 20px;
+}
+.logo {
+    font-family: Kodchasan;
+    font-style: Regular;
+    font-size: 30px;
+    padding-top: 82px;
+    padding-left: 154px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Slabo;
+    font-style: Regular;
+    font-size: 20px;
+    padding-top: 99px;
+    list-style-type: none;
+}
+.main-1 {
+    display: grid;
+    grid-area: main-1;
+    padding-left: 154px;
+}
+.main-2 {
+    display: grid;
+    grid-area: main-2;
+    justify-content: center;
+}
+.click {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+#title {
+    font-style: Medium;
+    font-family: Kodchasan;
+    font-size: 50px;
+}
+.text {
+    font-family: Slabo;
+    font-style: Regular;
+    font-size: 20px;
+}
+.click-1 {
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-family: Slabo;
+    font-style: Regular;
+    font-size: 24px;
+    background-color: #B2AE7F;
+}
+.click-2 {
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-family: Slabo;
+    font-style: Regular;
+    font-size: 24px;
+}
+.textfooter {
+    font-family: Slabo;
+    font-style: Regular;
+    font-size: 14px;
+}
