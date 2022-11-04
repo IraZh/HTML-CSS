@@ -1,0 +1,191 @@
+
+.header {
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+    background-color: #E0E0E0;
+}
+.sidebar {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FFF8E3;
+}
+.main {
+    display: grid;
+    grid-area: main;
+    justify-content: center;
+    background-color:  #DDECCB;
+}
+#title {
+    grid-area: title;
+    display: grid;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .header {
+        height: 20vh;
+    }
+    .sidebar {
+        height: 40vh;
+        display: grid;
+        grid-area: sidebar;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "beg-1"
+        "beg-2"
+        "lin";
+        grid-gap: 1em;
+    }
+    .beg-1 {
+        grid-area: beg-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+    }
+    .beg-2 {
+        grid-area: beg-2;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #FEEAB9;
+    }
+    .lin {
+        grid-area: lin;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+       
+    }
+    .main {
+        height: 40vh;
+    }
+    .footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 15% 1fr 15%;
+        height: 100vh;
+        grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    }
+    .sidebar {
+        display: grid;
+        grid-area: sidebar;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "beg-1 beg-2"
+        "lin lin";
+        grid-gap: 1em;
+    }
+    .beg-1 {
+        grid-area: beg-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+    }
+    .beg-2 {
+        grid-area: beg-2;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #FEEAB9;
+    }
+    .lin {
+        grid-area: lin;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+       
+    }
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #E0E0E0;
+        
+    }
+    .footer-1 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #FAFAFA;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        height: 20vh;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 15% 1fr;
+        height: 100vh;
+        grid-template-areas: 
+        "header header"
+        "sidebar main";
+    }
+    .sidebar {
+        height: 80vh;
+        display: grid;
+        grid-area: sidebar;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "beg-1"
+        "beg-2"
+        "lin";
+        grid-gap: 1em;
+    }
+    .main {
+        height: 80vh;
+    }
+    .beg-1 {
+        grid-area: beg-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+    }
+    .beg-2 {
+        grid-area: beg-2;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #FEEAB9;
+    }
+    .lin {
+        grid-area: lin;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEEAB9;
+       
+    }
+    .footer {
+        display: none;
+    }
+    
+}
